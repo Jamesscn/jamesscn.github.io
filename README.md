@@ -1,2 +1,3 @@
-# jamesscn.github.io
-My personal website
+# My personal website
+
+## This website is a work in progress, please come back later!
