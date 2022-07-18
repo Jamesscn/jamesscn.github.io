@@ -9,29 +9,126 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap-reboot.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		<link href="website/index.css" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css?family=Hind:600|Titillium+Web&display=swap" rel="stylesheet">
-    	<title>James Antonio Scoon González</title>
+    	<title>James Scoon's Website</title>
 	</head>
 	<body>
-		<div class="text-bg-primary px-5 py-5 gap-5 d-flex justify-content-center align-items-center">
-            <img src="website/portrait.png" width="180px" class="img-fluid rounded-4 shadow-lg">
-            <div>
-                <h1 class="fw-bold">James Antonio Scoon González</h1>
-                <h5 class="text-muted-primary">MSc. Intelligent Systems and Robotics</h5>
-                <h5 class="text-muted-primary">B.S. Mechatronics Engineering (Honors Program)</h5>
-                <p>I am an enthusiastic and perseverant engineer who is concerned with helping others and learning as much as I can. I am always looking for opportunities which will help me develop new interpersonal skills while additionally providing me the chance to apply my technical knowledge.</p>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="https://jamesscn.github.io/" class="navbar-brand">James Scoon</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="https://jamesscn.github.io/about.html">About Me</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Games
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://jamesscn.github.io/pacman/">Pacman</a></li>
+                            <li><a class="dropdown-item" href="https://jamesscn.github.io/wordscramble/">Wordscramble</a></li>
+                            <li><a class="dropdown-item" href="https://jamesscn.github.io/chipeight/">Chip-8 Emulator</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://github.com/Jamesscn/Tetris">Tetris</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/Jamesscn/Snake">Snake</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/Jamesscn/minefield">Minesweeper</a></li>
+                        </ul>
+                    </li>       
+                    <li class="nav-item"><a class="nav-link" href="https://jamesscn.github.io/Simulations/">Simulations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://jamesscn.github.io/Knowledge/">Tutorials</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="james-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#james-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#james-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#james-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#james-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                <img src="website/carousel-about.png" class="d-block w-100" alt="About Me">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(36, 36, 36, 0.9); box-shadow: 0px 0px 10px rgb(36, 36, 36);">
+                    <h5>About Me</h5>
+                    <p>See my curriculum and take a look at all the things I have done in my life.</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                <img src="website/carousel-games.png" class="d-block w-100" alt="Games">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(36, 36, 36, 0.9); box-shadow: 0px 0px 10px rgb(36, 36, 36);">
+                    <h5>Games</h5>
+                    <p>Play online games such as Pacman, my custom word game Wordscramble or various retro games in the Chip-8 emulator.</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                <img src="website/carousel-simulations.png" class="d-block w-100" alt="Simulations">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(36, 36, 36, 0.9); box-shadow: 0px 0px 10px rgb(36, 36, 36);">
+                    <h5>Simulations</h5>
+                    <p>Simulate discrete control systems, electric fields and more entirely within your web browser!</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                <img src="website/carousel-tutorials.png" class="d-block w-100" alt="Tutorials">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(36, 36, 36, 0.9); box-shadow: 0px 0px 10px rgb(36, 36, 36);">
+                    <h5>Tutorials</h5>
+                    <p>Visit my knowledge sharing website for guides and tutorials on topics which you won't find anywhere else on the internet.</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#james-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#james-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="mx-5 px-5 my-5">
+        <div class="text-center my-5">
+            <h1 class="display-3">Featured Items</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h2 class="display-5"><strong>Pacman</strong></h2>
+                <p class="lead">Play my Pacman clone online right now! You can connect a custom controller and in the future the game will support a level editor.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="https://jamesscn.github.io/pacman/">
+                    <img class="w-100 rounded-4" src="website/featurette-pacman.png">
+                </a>
             </div>
         </div>
-        <div class="my-divider"></div>
-        <div class="px-5 py-5 gap-5">
-            <div class="card">
-                <div class="text-bg-danger card-header px-4 py-4">
-                    <h5 class="card-title">Work in progress!</h5>
-                </div>
-                <div class="px-4 py-4">
-                    <p class="card-text">Sorry, but this website is a work-in-progress, so be sure to come back later and see if I have added anything new.</p>
-                </div>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h2 class="display-5"><strong>Master's Thesis</strong></h2>
+                <p class="lead">Take a look at my master's degree thesis and how I tested the state-of-the-art reinforcement learning algorithm Proximal Policy Optimization against a PID controller tuned by a genetic algorithm at piloting a simulated quadcopter.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="https://jamesscn.github.io/files/Dissertation.pdf">
+                    <img class="w-100 rounded-4" src="website/featurette-masters.png">
+                </a>
             </div>
         </div>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h2 class="display-5"><strong>Yocto for Raspberry Pi</strong></h2>
+                <p class="lead">Read my tutorial on how to create a custom Linux distribution for the Raspberry Pi 4 using the Yocto project.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="https://jamesscn.github.io/Knowledge/yocto/">
+                    <img class="w-100 rounded-4" src="website/featurette-yocto.png">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <footer class="container">
+            <p>Made by James Scoon</p>
+        </footer>
+        </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="website/index.js"></script>
 	</body>
